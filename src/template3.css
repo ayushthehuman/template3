@@ -1,0 +1,128 @@
+a {
+    color: blue;
+    margin: 20px;
+  }
+
+  #def {
+    margin-left: 77px;
+  }
+  #abc {
+    margin-right: 200px;
+    text-align:right;
+  }
+  #box1 {
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    width: 300px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    float: left;
+  }
+  #boxcontent {
+    border: 2px solid lightgrey;
+    width: 72%;
+    background-color: lightgrey;
+    margin-left: 50px;
+    padding: 25px;
+    padding-bottom: 25px;
+  }
+  #insidetext1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 120px;
+  }
+  #heading1,
+  #heading2,
+  #heading3 {
+    float: left;
+  }
+  #insidetext2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+  #heading2 {
+    float: left;
+  }
+  #box2,
+  #box3 {
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    width: 300px;
+    padding-bottom: 165px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    float: left;
+    text-align:center;
+  }
+  #insidetext3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 130px;
+  }
+  #main {
+     width:70%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow:hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-bottom:10px; */
+  }
+  #text1 {
+    font-size: 20px;
+    width: 300px;
+    margin-left: -70;
+    font-weight: normal;
+  }
+
+  #link1 {
+    margin-left: -10px;
+    font-size: 20;
+    color: black;
+    font-weight: normal;
+
+
+  }
+   #bottomside {
+    border: 10px solid lightgray;
+    background-color: lightgray;
+    width: 72%;
+    font-size: 18;
+    font-weight: bold;
+    margin-left: 50px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+    margin-top:20px;
+  } 
+
+  input[type="text"] {
+    font-size: 22;
+    width: 250px;
+    margin:0px 30px;
+  }
+  input[type="submit"] {
+    background-color: rgb(90, 168, 214);
+    width: 190px;;
+    font-size: 20;
+    text-align:left;
+  }
+  #footer{
+      display:flex;
+      justify-content: space-between;
+      width: 72%;
+      text-align:center;
+      flex-wrap: wrap;
+      
+      
+  }
+  
