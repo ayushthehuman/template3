@@ -1,128 +1,154 @@
-a {
-    color: blue;
-    margin: 20px;
-  }
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  overflow-x: hidden;
+}
+/* navigation bar starts */
+#top_nav {
+  padding: 15px 40px 15px 40px;
 
-  #def {
-    margin-left: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+#top_nav > h2 {
+  margin-top: 5px;
+}
+
+.right_nav li {
+  list-style: none;
+  display: inline;
+  padding: 0px 10px;
+  color: blue;
+}
+/* navigation bar ends */
+/* /* banner start * */
+#banner {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 15px 15px;
+}
+.banner_content {
+  width: 20%;
+  margin-left: 20px;
+}
+.banner_content > h2 {
+  margin-top: 3px;
+  font-size: 1.3rem;
+}
+.banner_content > p {
+  font-size: smaller;
+  margin: 12px 0px;
+}
+/* banner end */
+/* main boxes start */
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 17px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box_item {
+  width: 200px;
+  display: flex;
+
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gray_color {
+  padding: 60px 0px;
+  background-color: #eeeeee;
+  width: 100%;
+  margin-bottom: 3px;
+  color: #eeeeee;
+}
+
+.box_item > h3 {
+  padding: 5px;
+}
+.box_item > p {
+  margin: 8px 10px;
+  font-size: small;
+  text-align: justify;
+}
+.box_item > a {
+  font-size: small;
+  padding: 5px;
+  color: gray;
+}
+/* main boxes end */
+/* footer start */
+#footer {
+  margin-top: 10px;
+  padding: 15px 0px;
+  width: 100%;
+}
+#subscribe_block {
+  padding: 13px;
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#subscribe_block > span {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0px 10px;
+}
+#subscribe_block > input {
+  width: 30%;
+  padding: 8px;
+  margin: 0px 10px;
+}
+#subscribe_block > button {
+  width: 200px;
+  padding: 10px;
+  margin: 0px 10px;
+  background-color: #288acf;
+  border: none;
+}
+#subscribe_block > button > span {
+  color: white;
+  text-align: start;
+  font-weight: bold;
+  margin-right: 70px;
+}
+
+#copyright {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+  justify-content: space-between;
+  font-size: small;
+}
+/* footer ends */
+@media screen and (max-width: 1000px) {
+  .banner_content {
+    width: 30%;
   }
-  #abc {
-    margin-right: 200px;
-    text-align:right;
+  .banner_content > h2 {
+    font-size: 1.2rem;
   }
-  #box1 {
-    border: 2px solid lightgray;
-    background-color: lightgray;
-    width: 300px;
-    padding-bottom: 150px;
-    display: flex;
+}
+@media screen and (max-width: 600px) {
+  .banner_content {
+    width: 50%;
+  }
+  .banner_content > h2 {
+    font-size: 1rem;
+  }
+  #subscribe_block {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: 50px;
-    float: left;
   }
-  #boxcontent {
-    border: 2px solid lightgrey;
-    width: 72%;
-    background-color: lightgrey;
-    margin-left: 50px;
-    padding: 25px;
-    padding-bottom: 25px;
+  #subscribe_block > input {
+    margin: 5px;
   }
-  #insidetext1 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 120px;
-  }
-  #heading1,
-  #heading2,
-  #heading3 {
-    float: left;
-  }
-  #insidetext2 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 120px;
-    margin-bottom: 20px;
-  }
-  #heading2 {
-    float: left;
-  }
-  #box2,
-  #box3 {
-    border: 2px solid lightgray;
-    background-color: lightgray;
-    width: 300px;
-    padding-bottom: 165px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    float: left;
-    text-align:center;
-  }
-  #insidetext3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 130px;
-  }
-  #main {
-     width:70%;
-    margin-left: 50px;
-    display: flex;
-    justify-content: space-between;
-    overflow:hidden;
-    flex-wrap: wrap;
-    align-items: center;
-    /* margin-bottom:10px; */
-  }
-  #text1 {
-    font-size: 20px;
-    width: 300px;
-    margin-left: -70;
-    font-weight: normal;
-  }
-
-  #link1 {
-    margin-left: -10px;
-    font-size: 20;
-    color: black;
-    font-weight: normal;
-
-
-  }
-   #bottomside {
-    border: 10px solid lightgray;
-    background-color: lightgray;
-    width: 72%;
-    font-size: 18;
-    font-weight: bold;
-    margin-left: 50px;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    
-    margin-top:20px;
-  } 
-
-  input[type="text"] {
-    font-size: 22;
-    width: 250px;
-    margin:0px 30px;
-  }
-  input[type="submit"] {
-    background-color: rgb(90, 168, 214);
-    width: 190px;;
-    font-size: 20;
-    text-align:left;
-  }
-  #footer{
-      display:flex;
-      justify-content: space-between;
-      width: 72%;
-      text-align:center;
-      flex-wrap: wrap;
-      
-      
-  }
-  
+}
